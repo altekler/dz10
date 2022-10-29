@@ -1,0 +1,117 @@
+.section-product {
+    padding-top: 120px;
+
+    &__title {
+        display: block;
+        margin-bottom: 45px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 3.6em;
+        color: #555555;
+    }
+
+    &__categories {
+        display: flex;
+        justify-content: center;
+        column-gap: 70px;
+        margin-bottom: 75px;
+    }
+
+    &__category {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 2.4em;
+        color: #C2C2C2;
+
+        &:hover {
+            color: #7AC751;
+        }
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        position: relative;
+        max-width: 270px;
+        margin-bottom: 15px;
+        overflow: hidden;
+
+        & .mini-block--color-blue {
+            left: 1px;
+            border-radius: 0 0 5px 0;
+        }
+
+        & .mini-block--color-green {
+            left: 1px;
+            border-radius: 0 0 5px 0;
+        }
+
+        & .options {
+            bottom: 2%;
+            right: -20%;
+        }
+
+        &:hover .options {
+            animation: options 0.3s ease-out;
+            animation-fill-mode: forwards;
+        }
+
+    }
+
+    &__text-small {
+        display: block;
+        font-size: 1.4em;
+        color: rgba(117, 117, 117, 0.71);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        text-decoration: none;
+        font-size: 2em;
+        color: #555555;
+        margin-bottom: 10px;
+    }
+
+    &__price-rating {
+        display: flex;
+        max-width: 270px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    & .price-new {
+        margin-right: 10px;
+    }
+
+    &__rating {
+        margin-left: auto;
+        max-width: 70px;
+    }
+}
+
+@keyframes options {
+    0% {
+        right: -20%;
+    }
+
+    100% {
+        right: 5%;
+    }
+}

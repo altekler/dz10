@@ -1,0 +1,21 @@
+@media all and (max-width: 1024px) {
+    .section-main {
+        &__grid-container {
+            max-width: 500px;
+            min-height: 900px;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr repeat(2, 2fr);
+            grid-template-areas: "item-big""item-small-first""item-small-second"
+        }
+    }
+
+    .section-product {
+        &__grid-container {
+            max-width: 580px;
+            margin: 0 auto 50px auto;
+            justify-content: center;
+        }
+    }
+
+}

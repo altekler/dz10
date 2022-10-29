@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Rubik:wght@400;500&display=swap');
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+html {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.vector-img {
+    display: inline-block;
+    max-width: 11px;
+}
+
+.circle {
+    max-width: 25px;
+}
+
+@mixin mini-block ($background-color) {
+    display: inline-block;
+    position: absolute;
+    padding: 1px 10px 3px 10px;
+    color: #ffffff;
+    font-size: 1.2em;
+    background-color: $background-color;
+}
+
+.mini-block {
+    &--color-blue {
+        @include mini-block(#00B7F1);
+    }
+
+    &--color-green {
+        @include mini-block(#7AC751);
+    }
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    &__circle {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #ffffff;
+        margin-bottom: 8px;
+    }
+
+    &__item {
+        width: 10px;
+    }
+}
+
+.price {
+    &-new {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: #7AC751;
+    }
+
+    &-old {
+        font-size: 1.8em;
+        font-weight: 600;
+        text-decoration-line: line-through;
+        color: #CCCCCC;
+    }
+}

@@ -1,0 +1,115 @@
+@media all and (max-width: 767px) {
+    .section-main {
+        &__grid-container {
+            max-width: 500px;
+            min-height: 600px;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr repeat(2, 2fr);
+        }
+
+        &__title {
+            font-size: 1.6em;
+        }
+
+        &__text {
+            font-size: 1.4em;
+        }
+
+        &__link {
+            font-size: 1.2em;
+        }
+    }
+
+    .section-product {
+        padding-top: 60px;
+
+        &__title {
+            font-size: 2.5em;
+        }
+
+        &__categories {
+            column-gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        &__category {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        &__grid-container {
+            grid-template-columns: repeat(auto-fit, 270px);
+        }
+    }
+
+    .section-offer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__block {
+            &-first--background-change {
+                padding: 15px;
+            }
+
+            &-second--background-change {
+                padding: 15px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        &__grid-container {
+            grid-template-columns: repeat(auto-fit, 275px);
+            grid-template-rows: minmax(125px, auto);
+        }
+
+        &__block-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            max-width: 110px;
+            font-size: 1em;
+            line-height: 1em;
+            margin-bottom: 10px;
+        }
+
+        &__price {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 15px;
+
+            & .price-new {
+                margin-bottom: 5px;
+            }
+
+            & .price-old {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__button {
+            margin-left: 0;
+        }
+
+        &__circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: #7AC751;
+        }
+
+        &__amount-of-time {
+            font-size: 1em;
+        }
+
+        &__units-of-time {
+            font-size: 0.5em;
+        }
+    }
+}
